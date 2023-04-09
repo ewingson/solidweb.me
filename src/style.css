@@ -1,5 +1,7 @@
 .index-page {
     background-color: #f8f8f8;
+    font-size: 1em;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   }
 
 .index-page .header {
@@ -42,6 +44,7 @@
       color: #7C4DFF;
       font-size: 2em;
       line-height: 1em;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   }
   
  .index-page .logo {
