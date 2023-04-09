@@ -11,7 +11,7 @@
 <body>
   <header>
     <a href="/"><img src="/.well-known/css/images/solid.svg" alt="[Solid logo]" /></a>
-    <h1>solidweb.me Community Solid Server</h1>
+    <h1>Community Solid Server</h1>
   </header>
   <main>
     <div id="authenticating">
@@ -20,6 +20,7 @@
     <p class="error" id="error"></p>
 
     <fieldset>
+      <h3>under heavy adjustment</h3>
       <legend>Your account</legend>
       <ol>
         <li>
@@ -39,8 +40,9 @@
     <p class="actions"><button type="submit" name="submit">Log in</button></p>
 
     <ul class="actions">
-      <li><a id="register-link" href="" class="link">Sign up</a></li>
-      <li><a id="forgot-link"  href="" class="link">Forgot password</a></li>
+      <li><a integrity = "" id="testme" href="https://solidweb.me/idp/register/" class="link">Sign up</a></li>
+      <li><a integrity = "" id="register-link" href="" class="link">original code</a></li>
+      <li><a integrity = "" id="forgot-link"  href="" class="link">Forgot password (not functional)</a></li>
     </ul>
   </form>
 </div>
@@ -68,7 +70,7 @@
 
   addPostListener('mainForm', 'error', '', () => { throw new Error('Expected a location field in the response.') });
 
-  addControlLinks('https://solidweb.me.io/idp/', { 'register-link': 'register', 'forgot-link': 'forgotPassword'});
+  //addControlLinks('https://solidweb.me.io/idp/', { 'register-link': 'register', 'forgot-link': 'forgotPassword'});
 </script>
 
   </main>
