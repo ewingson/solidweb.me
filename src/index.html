@@ -1,3 +1,4 @@
+
 <!-- Location : /var/www/solidweb.me/somewhereelse/index.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +15,7 @@
 <meta name="description" content="solidweb.me provides a Community Solid Server. The Server is compliant to the Solid Specifications as described in the Technical Reports by the project."/>
 <link rel="icon" href="https://www.serverproject.de/favicon.ico" type="image/x-ico; charset=binary"/>
 <title>solidweb.me</title>
+<script defer="defer" src="/mashlib.min.js"></script>
 </head>
 <body class="index-page">
 <div class="header">
@@ -23,15 +25,20 @@
     <div class="header-center">
       <h1 class="title">Welcome to Solid prototype</h1>
     </div>
-    <div class="header-right" id="solidwebLoginStatusArea"></div>
-    <input type="button" onclick="window.location.href='./index3.html'" value="Log in" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #eef;">
-<input type="button" onclick="window.location.href='/idp/register/'" value="Sign up" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #efe;">
+    <div class="header-right" id="loginStatusArea"></div>
+   <!-- <input type="button" onclick="window.location.href='./index3.html'" value="Log in" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #eef;">
+<input type="button" onclick="window.location.href='/idp/register/'" value="Sign up" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #efe;">-->
 <a href = "https://github.com/SolidOS/userguide"><img src="./qm.svg"></a>
   </div>
+<div class="container" id="prototype">
+
+    <h3 style="display:none" id="loggedIn" class="webId"></h3>
+
+    <div class="content">
 <div>
 <br />
 <img src = "logo2.png" alt = "solidweb.me"/>
-<p>Welcome to <a href = "https://solidweb.me/">solidweb.me</a>. this is the 5.1.0 version of the <a href = "https://github.com/CommunitySolidServer/">Community Solid Server</a>. it is experimental software primary for testing purposes.</p>
+<p>Welcome to <a href = "https://solidweb.me/">solidweb.me</a>. this is the 6.0.0 version of the <a href = "https://github.com/CommunitySolidServer/">Community Solid Server</a>. it is experimental software primary for testing purposes.</p>
 
 <p>message from admin: goto <a href = "https://solidweb.me/ewingson/"><b>https://solidweb.me/&#60;user&#62;/</b></a> (note the trailing slash) to use SolidOS.</p>
   
@@ -39,7 +46,7 @@
 
 <p>deeper information about the project you'll find <a href = "https://solidproject.org">here on solidproject.org</a>, which is our main entry point and has similar interests as the <a href = "https://www.w3.org/community/solid/">Solid Community Group</a>.</p>
 
-  <p>an incomplete list of <a href = "https://matrix.to/#/#solid_app-development:gitter.im">Solid Apps</a> - of which a certain amount is already capable to do the current authentication method <a href = "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-dpop-12">DPoP</a> - can be found <a href = "https://solidproject.solidcommunity.net/Team/dpop-migration/apps%20status%20v2.0.md">here</a>.</p>
+  <p>an incomplete list of <a href = "https://matrix.to/#/#solid_app-development:gitter.im">Solid Apps</a> - of which a certain amount is already capable to do the current authentication method <a href = "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-dpop-13">DPoP</a> - can be found <a href = "https://solidproject.solidcommunity.net/Team/dpop-migration/apps%20status%20v2.0.md">here</a>.</p>
 
 <p>you can use e.g. <a href = "https://solidos.github.io/mashlib/dist/browse.html">mashlib-databrowser</a> to view your files, the technical name and fundament of the <a href = "https://solidos.solidcommunity.net/">SolidOS-Project</a>, which is pretty much an ongoing work.</p>
 
@@ -59,5 +66,9 @@
   
 <p><a href = "https://gist.github.com/ewingson/dbfee4d329c803aed0b0bd87e7a2fa00">Setup Documentation</a></p>  
 </div>
+</div> <!-- end content-->
+            </div> <!-- end container-->
+<script src="/mashlib.js"></script>
+<script src="/somewhereelse/button-helper.js"></script>
 </body>
 </html>
