@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         //     SHOW WELCOME, SHOW LOGIN BUTTON
         //     HIDE LOGIN BUTTON, ADD REGISTER BUTTON
         else {
-        let loginArea = document.getElementById('solidwebLoginStatusArea');
+        let loginArea = document.getElementById('loginStatusArea');
         let html = `<input type="button" onclick="window.location.href='/idp/register/'" value="Sign up" class="register-button" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #efe;">`
         let span = document.createElement("span")
         span.innerHTML = html
